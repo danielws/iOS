@@ -21,6 +21,8 @@
 		70307B5118AC7CAF006248E6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70307B3318AC7CAF006248E6 /* UIKit.framework */; };
 		70307B5918AC7CAF006248E6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 70307B5718AC7CAF006248E6 /* InfoPlist.strings */; };
 		70307B5B18AC7CAF006248E6 /* FB_Story_AppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 70307B5A18AC7CAF006248E6 /* FB_Story_AppTests.m */; };
+		70307B6618AC8BFF006248E6 /* e03.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 70307B6418AC8BFF006248E6 /* e03.jpeg */; };
+		70307B6718AC8BFF006248E6 /* SLJ.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 70307B6518AC8BFF006248E6 /* SLJ.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		70307B5618AC7CAF006248E6 /* FB Story AppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FB Story AppTests-Info.plist"; sourceTree = "<group>"; };
 		70307B5818AC7CAF006248E6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		70307B5A18AC7CAF006248E6 /* FB_Story_AppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FB_Story_AppTests.m; sourceTree = "<group>"; };
+		70307B6418AC8BFF006248E6 /* e03.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = e03.jpeg; sourceTree = "<group>"; };
+		70307B6518AC8BFF006248E6 /* SLJ.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SLJ.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +130,8 @@
 		70307B3618AC7CAF006248E6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				70307B6418AC8BFF006248E6 /* e03.jpeg */,
+				70307B6518AC8BFF006248E6 /* SLJ.jpg */,
 				70307B3718AC7CAF006248E6 /* FB Story App-Info.plist */,
 				70307B3818AC7CAF006248E6 /* InfoPlist.strings */,
 				70307B3B18AC7CAF006248E6 /* main.m */,
@@ -229,8 +235,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70307B6618AC8BFF006248E6 /* e03.jpeg in Resources */,
 				70307B4818AC7CAF006248E6 /* Images.xcassets in Resources */,
 				70307B3A18AC7CAF006248E6 /* InfoPlist.strings in Resources */,
+				70307B6718AC8BFF006248E6 /* SLJ.jpg in Resources */,
 				70307B4318AC7CAF006248E6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

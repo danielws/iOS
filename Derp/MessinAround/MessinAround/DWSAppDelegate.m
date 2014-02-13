@@ -1,8 +1,8 @@
 //
 //  DWSAppDelegate.m
-//  FB Story App
+//  MessinAround
 //
-//  Created by Daniel Warner Smith on 2/12/14.
+//  Created by Daniel Warner Smith on 2/13/14.
 //  Copyright (c) 2014 Daniel Warner Smith. All rights reserved.
 //
 
@@ -12,16 +12,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    UIWindow *localWindow = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    self.window = localWindow;
-    [localWindow makeKeyAndVisible];
-    UIStoryboard *sB = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    UIViewController *vC = [sB instantiateInitialViewController];
-    self.window.rootViewController = vC;
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
     return YES;
 }
-							
+
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

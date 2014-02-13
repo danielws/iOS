@@ -5,16 +5,16 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>FF1D4ADF-CCFF-4BED-9760-909D5F364293</string>
+	<string>3CAA1602-C6E1-412C-8481-6B880F9B8573</string>
 	<key>IDESourceControlProjectName</key>
-	<string>FB Story App</string>
+	<string>MessinAround</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>70B6F917-914B-4382-B99C-BBEE7A1526A4</key>
 		<string>ssh://github.com/danielws/iOS.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>FB Story App/FB Story App/FB Story App.xcodeproj/project.xcworkspace</string>
+	<string>Derp/MessinAround/MessinAround.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>70B6F917-914B-4382-B99C-BBEE7A1526A4</key>
