@@ -19,6 +19,8 @@
 		70307B9018AD5E6A006248E6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70307B7818AD5E6A006248E6 /* UIKit.framework */; };
 		70307B9818AD5E6A006248E6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 70307B9618AD5E6A006248E6 /* InfoPlist.strings */; };
 		70307B9A18AD5E6A006248E6 /* MessinAroundTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 70307B9918AD5E6A006248E6 /* MessinAroundTests.m */; };
+		70307BA618AD672F006248E6 /* DWSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70307BA418AD672F006248E6 /* DWSViewController.m */; };
+		70307BA718AD672F006248E6 /* DWSViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70307BA518AD672F006248E6 /* DWSViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,9 @@
 		70307B9518AD5E6A006248E6 /* MessinAroundTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MessinAroundTests-Info.plist"; sourceTree = "<group>"; };
 		70307B9718AD5E6A006248E6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		70307B9918AD5E6A006248E6 /* MessinAroundTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MessinAroundTests.m; sourceTree = "<group>"; };
+		70307BA318AD672F006248E6 /* DWSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWSViewController.h; sourceTree = "<group>"; };
+		70307BA418AD672F006248E6 /* DWSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWSViewController.m; sourceTree = "<group>"; };
+		70307BA518AD672F006248E6 /* DWSViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DWSViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +126,9 @@
 				70307B7C18AD5E6A006248E6 /* MessinAround-Info.plist */,
 				70307B7D18AD5E6A006248E6 /* InfoPlist.strings */,
 				70307B8018AD5E6A006248E6 /* main.m */,
+				70307BA318AD672F006248E6 /* DWSViewController.h */,
+				70307BA418AD672F006248E6 /* DWSViewController.m */,
+				70307BA518AD672F006248E6 /* DWSViewController.xib */,
 				70307B8218AD5E6A006248E6 /* MessinAround-Prefix.pch */,
 			);
 			name = "Supporting Files";
@@ -222,6 +230,7 @@
 			files = (
 				70307B7F18AD5E6A006248E6 /* InfoPlist.strings in Resources */,
 				70307B8718AD5E6A006248E6 /* Images.xcassets in Resources */,
+				70307BA718AD672F006248E6 /* DWSViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,6 +250,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				70307B8118AD5E6A006248E6 /* main.m in Sources */,
+				70307BA618AD672F006248E6 /* DWSViewController.m in Sources */,
 				70307B8518AD5E6A006248E6 /* DWSAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -442,6 +452,7 @@
 				70307B9F18AD5E6A006248E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		70307BA018AD5E6A006248E6 /* Build configuration list for PBXNativeTarget "MessinAroundTests" */ = {
 			isa = XCConfigurationList;
@@ -450,6 +461,7 @@
 				70307BA218AD5E6A006248E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -13,6 +13,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     UIWindow *localWindow = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window = localWindow;
     [localWindow makeKeyAndVisible];
