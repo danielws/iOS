@@ -7,13 +7,28 @@
 //
 
 #import "DWSAppDelegate.h"
+#import "StoryViewController.h"
+#import "NotificationsViewController.h"
 
 @implementation DWSAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
+    
+    //Instatiate the NotificationsViewController
+    NotificationsViewController *notificationsViewController = [[NotificationsViewController alloc] init];
+    //Instatiate the StoryViewController
+    StoryViewController *storyViewController = [[StoryViewController alloc] init];
+    
+    //Instatiate the NaviagtionController with the NotificationsViewController as the RootViewController
+    UINavigationController *notificationsNavigationController = [[UINavigationController alloc] initWithRootViewController:notificationsViewController];
+    
+    UITabBarController *tabBarController = [[UITabBarController alloc] init];
+    tabBarController.viewControllers = @[notificationsNavigationController, storyViewController];
+    //Kick off the party: Set the rootViewController of the app window as the tabBarController
+    self.window.rootViewController = tabBarController;
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
