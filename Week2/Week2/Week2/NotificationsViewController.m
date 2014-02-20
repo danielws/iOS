@@ -38,6 +38,9 @@
     [super viewDidLoad];
     self.tableView.dataSource = self;
     
+    //Set the tableview row height
+    _tableView.rowHeight = 100;
+    
     //Tell the tableview about the custom cell
     [self.tableView registerClass:[DWSNotificationCell  class]
            forCellReuseIdentifier:@"DWSNotificationCell"];
@@ -85,5 +88,11 @@
     StoryViewController *storyViewController = [[StoryViewController alloc]init];
     [self.navigationController pushViewController:storyViewController animated:YES];
 }
+
+// Set the tab bar images
+- (UITabBarItem *)tabBarItem {
+    return [[UITabBarItem alloc] initWithTitle:(@"Search") image:nil selectedImage:nil];
+}
+
 
 @end

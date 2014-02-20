@@ -1,0 +1,457 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		70D965EA18B6994700645568 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70D965E918B6994700645568 /* Foundation.framework */; };
+		70D965EC18B6994700645568 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70D965EB18B6994700645568 /* CoreGraphics.framework */; };
+		70D965EE18B6994700645568 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70D965ED18B6994700645568 /* UIKit.framework */; };
+		70D965F418B6994700645568 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 70D965F218B6994700645568 /* InfoPlist.strings */; };
+		70D965F618B6994700645568 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 70D965F518B6994700645568 /* main.m */; };
+		70D965FA18B6994700645568 /* DWSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 70D965F918B6994700645568 /* DWSAppDelegate.m */; };
+		70D965FC18B6994700645568 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70D965FB18B6994700645568 /* Images.xcassets */; };
+		70D9660318B6994700645568 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70D9660218B6994700645568 /* XCTest.framework */; };
+		70D9660418B6994700645568 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70D965E918B6994700645568 /* Foundation.framework */; };
+		70D9660518B6994700645568 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70D965ED18B6994700645568 /* UIKit.framework */; };
+		70D9660D18B6994700645568 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 70D9660B18B6994700645568 /* InfoPlist.strings */; };
+		70D9660F18B6994700645568 /* TomatoesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 70D9660E18B6994700645568 /* TomatoesTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		70D9660618B6994700645568 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 70D965DE18B6994700645568 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 70D965E518B6994700645568;
+			remoteInfo = Tomatoes;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		70D965E618B6994700645568 /* Tomatoes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tomatoes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		70D965E918B6994700645568 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		70D965EB18B6994700645568 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		70D965ED18B6994700645568 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		70D965F118B6994700645568 /* Tomatoes-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tomatoes-Info.plist"; sourceTree = "<group>"; };
+		70D965F318B6994700645568 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		70D965F518B6994700645568 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		70D965F718B6994700645568 /* Tomatoes-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tomatoes-Prefix.pch"; sourceTree = "<group>"; };
+		70D965F818B6994700645568 /* DWSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DWSAppDelegate.h; sourceTree = "<group>"; };
+		70D965F918B6994700645568 /* DWSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DWSAppDelegate.m; sourceTree = "<group>"; };
+		70D965FB18B6994700645568 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		70D9660118B6994700645568 /* TomatoesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TomatoesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		70D9660218B6994700645568 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		70D9660A18B6994700645568 /* TomatoesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TomatoesTests-Info.plist"; sourceTree = "<group>"; };
+		70D9660C18B6994700645568 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		70D9660E18B6994700645568 /* TomatoesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TomatoesTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		70D965E318B6994700645568 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70D965EC18B6994700645568 /* CoreGraphics.framework in Frameworks */,
+				70D965EE18B6994700645568 /* UIKit.framework in Frameworks */,
+				70D965EA18B6994700645568 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70D965FE18B6994700645568 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70D9660318B6994700645568 /* XCTest.framework in Frameworks */,
+				70D9660518B6994700645568 /* UIKit.framework in Frameworks */,
+				70D9660418B6994700645568 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		70D965DD18B6994700645568 = {
+			isa = PBXGroup;
+			children = (
+				70D965EF18B6994700645568 /* Tomatoes */,
+				70D9660818B6994700645568 /* TomatoesTests */,
+				70D965E818B6994700645568 /* Frameworks */,
+				70D965E718B6994700645568 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		70D965E718B6994700645568 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				70D965E618B6994700645568 /* Tomatoes.app */,
+				70D9660118B6994700645568 /* TomatoesTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		70D965E818B6994700645568 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				70D965E918B6994700645568 /* Foundation.framework */,
+				70D965EB18B6994700645568 /* CoreGraphics.framework */,
+				70D965ED18B6994700645568 /* UIKit.framework */,
+				70D9660218B6994700645568 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		70D965EF18B6994700645568 /* Tomatoes */ = {
+			isa = PBXGroup;
+			children = (
+				70D965F818B6994700645568 /* DWSAppDelegate.h */,
+				70D965F918B6994700645568 /* DWSAppDelegate.m */,
+				70D965FB18B6994700645568 /* Images.xcassets */,
+				70D965F018B6994700645568 /* Supporting Files */,
+			);
+			path = Tomatoes;
+			sourceTree = "<group>";
+		};
+		70D965F018B6994700645568 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				70D965F118B6994700645568 /* Tomatoes-Info.plist */,
+				70D965F218B6994700645568 /* InfoPlist.strings */,
+				70D965F518B6994700645568 /* main.m */,
+				70D965F718B6994700645568 /* Tomatoes-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		70D9660818B6994700645568 /* TomatoesTests */ = {
+			isa = PBXGroup;
+			children = (
+				70D9660E18B6994700645568 /* TomatoesTests.m */,
+				70D9660918B6994700645568 /* Supporting Files */,
+			);
+			path = TomatoesTests;
+			sourceTree = "<group>";
+		};
+		70D9660918B6994700645568 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				70D9660A18B6994700645568 /* TomatoesTests-Info.plist */,
+				70D9660B18B6994700645568 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		70D965E518B6994700645568 /* Tomatoes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70D9661218B6994700645568 /* Build configuration list for PBXNativeTarget "Tomatoes" */;
+			buildPhases = (
+				70D965E218B6994700645568 /* Sources */,
+				70D965E318B6994700645568 /* Frameworks */,
+				70D965E418B6994700645568 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tomatoes;
+			productName = Tomatoes;
+			productReference = 70D965E618B6994700645568 /* Tomatoes.app */;
+			productType = "com.apple.product-type.application";
+		};
+		70D9660018B6994700645568 /* TomatoesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70D9661518B6994700645568 /* Build configuration list for PBXNativeTarget "TomatoesTests" */;
+			buildPhases = (
+				70D965FD18B6994700645568 /* Sources */,
+				70D965FE18B6994700645568 /* Frameworks */,
+				70D965FF18B6994700645568 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				70D9660718B6994700645568 /* PBXTargetDependency */,
+			);
+			name = TomatoesTests;
+			productName = TomatoesTests;
+			productReference = 70D9660118B6994700645568 /* TomatoesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		70D965DE18B6994700645568 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = DWS;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Daniel Warner Smith";
+				TargetAttributes = {
+					70D9660018B6994700645568 = {
+						TestTargetID = 70D965E518B6994700645568;
+					};
+				};
+			};
+			buildConfigurationList = 70D965E118B6994700645568 /* Build configuration list for PBXProject "Tomatoes" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 70D965DD18B6994700645568;
+			productRefGroup = 70D965E718B6994700645568 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				70D965E518B6994700645568 /* Tomatoes */,
+				70D9660018B6994700645568 /* TomatoesTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		70D965E418B6994700645568 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70D965F418B6994700645568 /* InfoPlist.strings in Resources */,
+				70D965FC18B6994700645568 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70D965FF18B6994700645568 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70D9660D18B6994700645568 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		70D965E218B6994700645568 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70D965F618B6994700645568 /* main.m in Sources */,
+				70D965FA18B6994700645568 /* DWSAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70D965FD18B6994700645568 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70D9660F18B6994700645568 /* TomatoesTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		70D9660718B6994700645568 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 70D965E518B6994700645568 /* Tomatoes */;
+			targetProxy = 70D9660618B6994700645568 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		70D965F218B6994700645568 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				70D965F318B6994700645568 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		70D9660B18B6994700645568 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				70D9660C18B6994700645568 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		70D9661018B6994700645568 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		70D9661118B6994700645568 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		70D9661318B6994700645568 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tomatoes/Tomatoes-Prefix.pch";
+				INFOPLIST_FILE = "Tomatoes/Tomatoes-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		70D9661418B6994700645568 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tomatoes/Tomatoes-Prefix.pch";
+				INFOPLIST_FILE = "Tomatoes/Tomatoes-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		70D9661618B6994700645568 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Tomatoes.app/Tomatoes";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tomatoes/Tomatoes-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "TomatoesTests/TomatoesTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		70D9661718B6994700645568 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Tomatoes.app/Tomatoes";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tomatoes/Tomatoes-Prefix.pch";
+				INFOPLIST_FILE = "TomatoesTests/TomatoesTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		70D965E118B6994700645568 /* Build configuration list for PBXProject "Tomatoes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70D9661018B6994700645568 /* Debug */,
+				70D9661118B6994700645568 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		70D9661218B6994700645568 /* Build configuration list for PBXNativeTarget "Tomatoes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70D9661318B6994700645568 /* Debug */,
+				70D9661418B6994700645568 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		70D9661518B6994700645568 /* Build configuration list for PBXNativeTarget "TomatoesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70D9661618B6994700645568 /* Debug */,
+				70D9661718B6994700645568 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 70D965DE18B6994700645568 /* Project object */;
+}
