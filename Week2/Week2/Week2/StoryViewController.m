@@ -25,6 +25,10 @@
 @property (nonatomic, strong) UILabel *likeCount;
 @property (nonatomic, strong) UIView *topRule;
 @property (nonatomic, strong) UIView *bottomRule;
+@property (nonatomic, strong) UIView *commentBar;
+@property (nonatomic, strong) UITextField *commentField;
+@property (nonatomic, strong) UIButton *postButton;
+@property (nonatomic, strong) UIView *commentRule;
 
 @end
 
@@ -137,7 +141,7 @@
     UIButton *share = [[UIButton alloc] initWithFrame:CGRectZero];
     [share setTitle:@"Share" forState:UIControlStateNormal];
     [share setTitleColor:[UIColor colorWithRed:(0.608) green:(0.62) blue:(0.639) alpha:(1)] forState:UIControlStateNormal];
-    [comment setTitleColor:[UIColor colorWithRed:(0.345) green:(0.565) blue:(1) alpha:(1)] forState:UIControlStateSelected];
+    [share setTitleColor:[UIColor colorWithRed:(0.345) green:(0.565) blue:(1) alpha:(1)] forState:UIControlStateSelected];
     [share.titleLabel setFont:[UIFont fontWithName:@"HelveticaNeue-bold" size:12]];
     [share setImage:[UIImage imageNamed:@"comment_null"] forState:UIControlStateNormal];
     [share setImage:[UIImage imageNamed:@"comment_active"] forState:UIControlStateSelected];
@@ -148,6 +152,27 @@
     self.likeCount.text = @"100 people like this";
     [self.likeCount setFont:[UIFont fontWithName:@"HelveticaNeue" size:14]];
     [self.card addSubview:self.likeCount];
+    
+    self.commentBar = [[UIView alloc] initWithFrame:CGRectZero];
+    [self.view addSubview:self.commentBar];
+    
+    self.commentField = [[UITextField alloc] initWithFrame:CGRectZero];
+    [self.commentField setTextColor:[UIColor colorWithRed:0.71 green:0.71 blue:0.71 alpha:1]];
+    [self.commentField setFont:[UIFont fontWithName:@"HelveticaNeue" size:14]];
+    [self.commentField setText:@"Write a comment..."];
+    [self.commentBar addSubview:self.commentField];
+    UIView *spacerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 10, 10)];
+    [self.commentField setLeftViewMode:UITextFieldViewModeAlways];
+    [self.commentField setLeftView:spacerView];
+    
+    self.postButton = [[UIButton alloc] initWithFrame:CGRectZero];
+    [self.postButton setTitle:@"Post" forState:UIControlStateNormal];
+    [self.postButton.titleLabel setFont:[UIFont fontWithName:@"HelveticaNeue" size:18]];
+    [self.postButton setTitleColor:[UIColor colorWithRed:0.804 green:0.808 blue:0.812 alpha:1.0] forState:UIControlStateNormal];
+    [self.commentBar addSubview:self.postButton];
+    
+    self.commentRule = [[UIView alloc] initWithFrame:CGRectZero];
+    [self.commentBar addSubview:self.commentRule];
 
 }
 
@@ -202,6 +227,18 @@
     [_likeCount sizeToFit];
     _likeCount.frame = CGRectMake(CGRectGetMinX(_userImage.frame), CGRectGetMaxY(_ufi.frame) + 12, _likeCount.frame.size.width, _likeCount.frame.size.height);
 
+    _commentBar.frame = CGRectMake(0, 322, 320, 45);
+    _commentBar.backgroundColor = [UIColor colorWithRed:0.941 green:0.945 blue:0.953 alpha:1];
+    
+    _commentRule.frame = CGRectMake(0, 0, _commentBar.frame.size.width, 1);
+    _commentRule.backgroundColor = [UIColor colorWithRed:0.576 green:0.584 blue:0.6 alpha:1];
+    
+    _commentField.frame = CGRectMake(10, 7, 214, 32);
+    _commentField.background = [UIImage imageNamed:@"comment_bg"];
+    
+    [_postButton sizeToFit];
+    _postButton.frame = CGRectMake(260, 7, _postButton.frame.size.width, _postButton.frame.size.height);
+    
 }
 - (void)didReceiveMemoryWarning
 {
@@ -214,6 +251,13 @@
 }
 
 - (void)onTap: (id)sender {
+}
+
+- (void)onTapOut: (id)sender {
+    
+}
+
+-(void)tapOutEdit:(UIButton *)sender {
 }
 
 - (void)likeButtonPressed:(UIButton *)sender {
