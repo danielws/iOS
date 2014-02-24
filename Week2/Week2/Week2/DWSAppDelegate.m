@@ -23,6 +23,7 @@
     //Instatiate the NotificationsViewController
     NotificationsViewController *notificationsViewController = [[NotificationsViewController alloc] init];
     notificationsViewController.tabBarItem.image = [UIImage imageNamed:@"ios7_tabbar_notificationsicon_normal"];
+    notificationsViewController.tabBarItem.title = @"Notifications";
     
     //Instatiate the StoryViewController
     //StoryViewController *storyViewController = [[StoryViewController alloc] init];
@@ -30,6 +31,7 @@
     
     FeedStoryViewController *feedStoryViewController = [[FeedStoryViewController alloc] init];
     feedStoryViewController.tabBarItem.image = [UIImage imageNamed:@"ios7_tabbar_feedicon_normal"];
+    feedStoryViewController.tabBarItem.title = @"Newsfeed";
     feedStoryViewController.view.backgroundColor = [UIColor colorWithRed:0.827 green:0.839 blue:0.859 alpha:1];
 
 
