@@ -9,9 +9,11 @@
 #import "NotificationsViewController.h"
 #import "StoryViewController.h"
 #import "DWSNotificationCell.h"
+#import "DWSNotification.h"
 
 @interface NotificationsViewController ()
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (strong, nonatomic) DWSNotification *notifObject;
 @property (strong, nonatomic) NSArray *notifs;
 
 @end
@@ -22,28 +24,46 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.notifs = @[
-                        @{ @"name" : @"Ben",
-                        @"message" : @"Yo dawg you got a comment on your stuff.",
-                           @"time" : @"12:00pm" },
-                        @{ @"name" : @"Bob",
-                        @"message" : @"Another message for you",
-                           @"time" : @"1:00pm" }];
     }
     return self;
+
 }
+
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     self.tableView.dataSource = self;
-    
-    //Set the tableview row height
-    _tableView.rowHeight = 100;
-    
+    self.tableView.delegate = self;
+    self.notifs = [DWSNotification fakeNotifs];
     //Tell the tableview about the custom cell
     [self.tableView registerClass:[DWSNotificationCell  class]
            forCellReuseIdentifier:@"DWSNotificationCell"];
+    
+    //Set the right bar button item
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"ios7_tabbar_moreicon_normal"]
+                                                                              style:UIBarButtonItemStylePlain
+                                                                             target:self
+                                                                             action:@selector(onMessagePress:)];
+    
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"search_white"]
+                                                                              style:UIBarButtonItemStylePlain
+                                                                             target:self
+                                                                             action:@selector(onMessagePress:)];
+    
+#pragma mark - View Styling
+    //Style the top Nav
+    UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectZero];
+    self.navigationItem.titleView = titleLabel;
+    titleLabel.text = @"Notifications";
+    [titleLabel sizeToFit];
+    titleLabel.textColor = [UIColor whiteColor];
+    titleLabel.backgroundColor = [UIColor clearColor];
+
+    self.tableView.separatorColor = [UIColor clearColor];
+    [self.tableView setContentInset:UIEdgeInsetsMake(0, 0, 180, 0)];
+
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -59,39 +79,58 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView
          cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    NSDictionary *notification = self.notifs[indexPath.row];
+    DWSNotification *notification = self.notifs[indexPath.row];
     
-    NSString *userName = notification[@"name"];
-    NSString *dateLabel = notification[@"time"];
-    NSString *messageLabel = notification[@"message"];
     
-    DWSNotificationCell *notificationCell = [tableView dequeueReusableCellWithIdentifier:@"DWSNotificationCell"];
-    UITableViewCell *cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault
-                                                  reuseIdentifier:nil];
+    NSString *userName = notification.actor;
+    NSString *dateLabel = notification.timeStamp;
+    NSString *messageLabel = notification.notifMessage;
+    UIImage *userImage = notification.userImage;
+    UIImage *notifBadge = notification.notifBadge;
+
+    NSString *identifier = @"DWSNotificationCell";
+    
+    DWSNotificationCell *notificationCell = [tableView dequeueReusableCellWithIdentifier:identifier];
+    if (!notificationCell) {
+        notificationCell = [[DWSNotificationCell alloc] initWithStyle:UITableViewCellStyleDefault
+                                                      reuseIdentifier:identifier];
+    }
+    
+    notificationCell.notificationLabel.attributedText = [notification prettyString];
     notificationCell.userNameLabel.text = userName;
     notificationCell.messageLabel.text = messageLabel;
     notificationCell.dateLabel.text = dateLabel;
+    notificationCell.userImage.image = userImage;
+    notificationCell.notifBadgeImage.image = notifBadge;
     
-    cell.selectionStyle = UITableViewCellEditingStyleNone;
-    
-    cell.textLabel.text = @"hello";
+    //notificationCell.selectionStyle = UITableViewCellEditingStyleNone;
     
     return notificationCell;
 }
 
-- (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath {
-    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [cell layoutSubviews];
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 81;
 }
 
 #pragma mark - Private Methods
-- (IBAction)onTap:(id)sender {
+
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
     StoryViewController *storyViewController = [[StoryViewController alloc]init];
+    storyViewController.storyInfo = [self.notifs objectAtIndex:indexPath.row];
     [self.navigationController pushViewController:storyViewController animated:YES];
 }
 
-// Set the tab bar images
-- (UITabBarItem *)tabBarItem {
-    return [[UITabBarItem alloc] initWithTitle:(@"Search") image:nil selectedImage:nil];
+- (void)onMessagePress:(id)sender {
+    
 }
 
 

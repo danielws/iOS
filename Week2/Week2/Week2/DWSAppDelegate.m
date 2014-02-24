@@ -9,30 +9,61 @@
 #import "DWSAppDelegate.h"
 #import "StoryViewController.h"
 #import "NotificationsViewController.h"
+#import "FeedStoryViewController.h"
 
 @implementation DWSAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    // Set white status bar
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
     //Instatiate the NotificationsViewController
     NotificationsViewController *notificationsViewController = [[NotificationsViewController alloc] init];
-    //Instatiate the StoryViewController
-    StoryViewController *storyViewController = [[StoryViewController alloc] init];
+    notificationsViewController.tabBarItem.image = [UIImage imageNamed:@"ios7_tabbar_notificationsicon_normal"];
     
+    //Instatiate the StoryViewController
+    //StoryViewController *storyViewController = [[StoryViewController alloc] init];
+   // storyViewController.tabBarItem.image = [UIImage imageNamed:@"ios7_tabbar_feedicon_normal"];
+    
+    FeedStoryViewController *feedStoryViewController = [[FeedStoryViewController alloc] init];
+    feedStoryViewController.tabBarItem.image = [UIImage imageNamed:@"ios7_tabbar_feedicon_normal"];
+    feedStoryViewController.view.backgroundColor = [UIColor colorWithRed:0.827 green:0.839 blue:0.859 alpha:1];
+
+
     //Instatiate the NaviagtionController with the NotificationsViewController as the RootViewController
     UINavigationController *notificationsNavigationController = [[UINavigationController alloc] initWithRootViewController:notificationsViewController];
+
+    //Instantiate the Navigation controller for the FeedView
+    UINavigationController *feedNavigationController = [[UINavigationController alloc] initWithRootViewController:feedStoryViewController];
     
     UITabBarController *tabBarController = [[UITabBarController alloc] init];
-    tabBarController.viewControllers = @[notificationsNavigationController, storyViewController];
+    tabBarController.viewControllers = @[feedNavigationController, notificationsNavigationController];
     //Kick off the party: Set the rootViewController of the app window as the tabBarController
     self.window.rootViewController = tabBarController;
     
+    
+    //Style the navBar
+    notificationsNavigationController.navigationBar.barTintColor = [UIColor colorWithRed:(0.255) green:(0.373) blue:(0.612) alpha:(1)];
+    notificationsNavigationController.navigationBar.tintColor = [UIColor whiteColor];
+    notificationsNavigationController.navigationBar.translucent = NO;
+    
+    feedNavigationController.navigationBar.barTintColor = [UIColor colorWithRed:(0.255) green:(0.373) blue:(0.612) alpha:(1)];
+    feedNavigationController.navigationBar.tintColor = [UIColor whiteColor];
+    feedNavigationController.navigationBar.translucent = NO;
+    
+    //Style the tabBar
     self.window.backgroundColor = [UIColor whiteColor];
+    self.window.tintColor = [UIColor colorWithRed:(0.278) green:(0.486) blue:(0.902) alpha:(1)];
     [self.window makeKeyAndVisible];
     return YES;
+    
+    
+
 }
+
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {

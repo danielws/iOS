@@ -19,6 +19,9 @@
 		70D9660518B6994700645568 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70D965ED18B6994700645568 /* UIKit.framework */; };
 		70D9660D18B6994700645568 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 70D9660B18B6994700645568 /* InfoPlist.strings */; };
 		70D9660F18B6994700645568 /* TomatoesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 70D9660E18B6994700645568 /* TomatoesTests.m */; };
+		70D9661B18B6996D00645568 /* Movie.m in Sources */ = {isa = PBXBuildFile; fileRef = 70D9661A18B6996D00645568 /* Movie.m */; };
+		70D9662018B69A9C00645568 /* MoviesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70D9661E18B69A9C00645568 /* MoviesViewController.m */; };
+		70D9662118B69A9C00645568 /* MoviesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70D9661F18B69A9C00645568 /* MoviesViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,11 @@
 		70D9660A18B6994700645568 /* TomatoesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TomatoesTests-Info.plist"; sourceTree = "<group>"; };
 		70D9660C18B6994700645568 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		70D9660E18B6994700645568 /* TomatoesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TomatoesTests.m; sourceTree = "<group>"; };
+		70D9661918B6996D00645568 /* Movie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Movie.h; sourceTree = "<group>"; };
+		70D9661A18B6996D00645568 /* Movie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Movie.m; sourceTree = "<group>"; };
+		70D9661D18B69A9C00645568 /* MoviesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoviesViewController.h; sourceTree = "<group>"; };
+		70D9661E18B69A9C00645568 /* MoviesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoviesViewController.m; sourceTree = "<group>"; };
+		70D9661F18B69A9C00645568 /* MoviesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MoviesViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +115,8 @@
 		70D965EF18B6994700645568 /* Tomatoes */ = {
 			isa = PBXGroup;
 			children = (
+				70D9661C18B69A7C00645568 /* View Controllers */,
+				70D9661818B6995200645568 /* Models */,
 				70D965F818B6994700645568 /* DWSAppDelegate.h */,
 				70D965F918B6994700645568 /* DWSAppDelegate.m */,
 				70D965FB18B6994700645568 /* Images.xcassets */,
@@ -142,6 +152,25 @@
 				70D9660B18B6994700645568 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		70D9661818B6995200645568 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				70D9661918B6996D00645568 /* Movie.h */,
+				70D9661A18B6996D00645568 /* Movie.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		70D9661C18B69A7C00645568 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				70D9661D18B69A9C00645568 /* MoviesViewController.h */,
+				70D9661E18B69A9C00645568 /* MoviesViewController.m */,
+				70D9661F18B69A9C00645568 /* MoviesViewController.xib */,
+			);
+			name = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,6 +250,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				70D965F418B6994700645568 /* InfoPlist.strings in Resources */,
+				70D9662118B69A9C00645568 /* MoviesViewController.xib in Resources */,
 				70D965FC18B6994700645568 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -240,8 +270,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70D9661B18B6996D00645568 /* Movie.m in Sources */,
 				70D965F618B6994700645568 /* main.m in Sources */,
 				70D965FA18B6994700645568 /* DWSAppDelegate.m in Sources */,
+				70D9662018B69A9C00645568 /* MoviesViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -24,6 +24,17 @@
 		706C4ECE18B5984300A558FA /* StoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 706C4ECC18B5984300A558FA /* StoryViewController.m */; };
 		706C4ECF18B5984300A558FA /* StoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 706C4ECD18B5984300A558FA /* StoryViewController.xib */; };
 		706C4ED218B5B50000A558FA /* DWSNotificationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 706C4ED118B5B50000A558FA /* DWSNotificationCell.m */; };
+		70A0347918B7C50500598CC5 /* DWSNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 70A0347818B7C50500598CC5 /* DWSNotification.m */; };
+		70F44AFB18B9DEB800AD2024 /* UIView+FitToSubViews.m in Sources */ = {isa = PBXBuildFile; fileRef = 70F44AFA18B9DEB800AD2024 /* UIView+FitToSubViews.m */; };
+		70F44AFD18BAC88400AD2024 /* SLJ.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 70F44AFC18BAC88400AD2024 /* SLJ.jpg */; };
+		70F44AFF18BB1AD200AD2024 /* hunter.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 70F44AFE18BB1AD200AD2024 /* hunter.jpg */; };
+		70F44B0318BB1DD000AD2024 /* apps.png in Resources */ = {isa = PBXBuildFile; fileRef = 70F44B0218BB1DD000AD2024 /* apps.png */; };
+		70F44B0518BB217D00AD2024 /* apps2.png in Resources */ = {isa = PBXBuildFile; fileRef = 70F44B0418BB217D00AD2024 /* apps2.png */; };
+		70F44B0718BB21AF00AD2024 /* russ.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 70F44B0618BB21AF00AD2024 /* russ.jpg */; };
+		70F44B0918BB21BD00AD2024 /* kate.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 70F44B0818BB21BD00AD2024 /* kate.jpg */; };
+		70F44B0B18BB21D600AD2024 /* austin.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 70F44B0A18BB21D600AD2024 /* austin.jpg */; };
+		70F44B0D18BB21E800AD2024 /* robyn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 70F44B0C18BB21E800AD2024 /* robyn.jpg */; };
+		70F44B1018BB258D00AD2024 /* FeedStoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70F44B0F18BB258D00AD2024 /* FeedStoryViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +72,20 @@
 		706C4ECD18B5984300A558FA /* StoryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StoryViewController.xib; sourceTree = "<group>"; };
 		706C4ED018B5B50000A558FA /* DWSNotificationCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWSNotificationCell.h; sourceTree = "<group>"; };
 		706C4ED118B5B50000A558FA /* DWSNotificationCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWSNotificationCell.m; sourceTree = "<group>"; };
+		70A0347718B7C50500598CC5 /* DWSNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWSNotification.h; sourceTree = "<group>"; };
+		70A0347818B7C50500598CC5 /* DWSNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWSNotification.m; sourceTree = "<group>"; };
+		70F44AF918B9DEB800AD2024 /* UIView+FitToSubViews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FitToSubViews.h"; sourceTree = "<group>"; };
+		70F44AFA18B9DEB800AD2024 /* UIView+FitToSubViews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FitToSubViews.m"; sourceTree = "<group>"; };
+		70F44AFC18BAC88400AD2024 /* SLJ.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SLJ.jpg; sourceTree = "<group>"; };
+		70F44AFE18BB1AD200AD2024 /* hunter.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hunter.jpg; sourceTree = "<group>"; };
+		70F44B0218BB1DD000AD2024 /* apps.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = apps.png; sourceTree = "<group>"; };
+		70F44B0418BB217D00AD2024 /* apps2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = apps2.png; sourceTree = "<group>"; };
+		70F44B0618BB21AF00AD2024 /* russ.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = russ.jpg; sourceTree = "<group>"; };
+		70F44B0818BB21BD00AD2024 /* kate.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = kate.jpg; sourceTree = "<group>"; };
+		70F44B0A18BB21D600AD2024 /* austin.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = austin.jpg; sourceTree = "<group>"; };
+		70F44B0C18BB21E800AD2024 /* robyn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = robyn.jpg; sourceTree = "<group>"; };
+		70F44B0E18BB258D00AD2024 /* FeedStoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedStoryViewController.h; sourceTree = "<group>"; };
+		70F44B0F18BB258D00AD2024 /* FeedStoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedStoryViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,18 +145,14 @@
 		706C4E9D18B594F000A558FA /* Week2 */ = {
 			isa = PBXGroup;
 			children = (
+				70F44AF818B9DE8500AD2024 /* Categories */,
 				706C4EA618B594F000A558FA /* DWSAppDelegate.h */,
 				706C4EA718B594F000A558FA /* DWSAppDelegate.m */,
+				70A0347618B7C4CE00598CC5 /* Models */,
+				70A0347A18B9561200598CC5 /* Views */,
+				70A0347B18B9565E00598CC5 /* Controllers */,
 				706C4EA918B594F000A558FA /* Images.xcassets */,
 				706C4E9E18B594F000A558FA /* Supporting Files */,
-				706C4EC618B5982F00A558FA /* NotificationsViewController.h */,
-				706C4EC718B5982F00A558FA /* NotificationsViewController.m */,
-				706C4EC818B5982F00A558FA /* NotificationsViewController.xib */,
-				706C4ECB18B5984300A558FA /* StoryViewController.h */,
-				706C4ECC18B5984300A558FA /* StoryViewController.m */,
-				706C4ECD18B5984300A558FA /* StoryViewController.xib */,
-				706C4ED018B5B50000A558FA /* DWSNotificationCell.h */,
-				706C4ED118B5B50000A558FA /* DWSNotificationCell.m */,
 			);
 			path = Week2;
 			sourceTree = "<group>";
@@ -139,8 +160,16 @@
 		706C4E9E18B594F000A558FA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				70F44AFE18BB1AD200AD2024 /* hunter.jpg */,
+				70F44B0218BB1DD000AD2024 /* apps.png */,
+				70F44B0418BB217D00AD2024 /* apps2.png */,
+				70F44B0C18BB21E800AD2024 /* robyn.jpg */,
+				70F44B0618BB21AF00AD2024 /* russ.jpg */,
+				70F44AFC18BAC88400AD2024 /* SLJ.jpg */,
 				706C4E9F18B594F000A558FA /* Week2-Info.plist */,
+				70F44B0818BB21BD00AD2024 /* kate.jpg */,
 				706C4EA018B594F000A558FA /* InfoPlist.strings */,
+				70F44B0A18BB21D600AD2024 /* austin.jpg */,
 				706C4EA318B594F000A558FA /* main.m */,
 				706C4EA518B594F000A558FA /* Week2-Prefix.pch */,
 			);
@@ -163,6 +192,48 @@
 				706C4EB918B594F000A558FA /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		70A0347618B7C4CE00598CC5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				70A0347718B7C50500598CC5 /* DWSNotification.h */,
+				70A0347818B7C50500598CC5 /* DWSNotification.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		70A0347A18B9561200598CC5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				706C4ED018B5B50000A558FA /* DWSNotificationCell.h */,
+				706C4ED118B5B50000A558FA /* DWSNotificationCell.m */,
+				706C4ECD18B5984300A558FA /* StoryViewController.xib */,
+				706C4EC818B5982F00A558FA /* NotificationsViewController.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		70A0347B18B9565E00598CC5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				706C4ECB18B5984300A558FA /* StoryViewController.h */,
+				706C4ECC18B5984300A558FA /* StoryViewController.m */,
+				706C4EC618B5982F00A558FA /* NotificationsViewController.h */,
+				706C4EC718B5982F00A558FA /* NotificationsViewController.m */,
+				70F44B0E18BB258D00AD2024 /* FeedStoryViewController.h */,
+				70F44B0F18BB258D00AD2024 /* FeedStoryViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		70F44AF818B9DE8500AD2024 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				70F44AF918B9DEB800AD2024 /* UIView+FitToSubViews.h */,
+				70F44AFA18B9DEB800AD2024 /* UIView+FitToSubViews.m */,
+			);
+			name = Categories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,8 +313,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				706C4ECF18B5984300A558FA /* StoryViewController.xib in Resources */,
+				70F44B0918BB21BD00AD2024 /* kate.jpg in Resources */,
 				706C4ECA18B5982F00A558FA /* NotificationsViewController.xib in Resources */,
+				70F44B0318BB1DD000AD2024 /* apps.png in Resources */,
+				70F44B0518BB217D00AD2024 /* apps2.png in Resources */,
+				70F44AFF18BB1AD200AD2024 /* hunter.jpg in Resources */,
 				706C4EA218B594F000A558FA /* InfoPlist.strings in Resources */,
+				70F44B0D18BB21E800AD2024 /* robyn.jpg in Resources */,
+				70F44B0B18BB21D600AD2024 /* austin.jpg in Resources */,
+				70F44AFD18BAC88400AD2024 /* SLJ.jpg in Resources */,
+				70F44B0718BB21AF00AD2024 /* russ.jpg in Resources */,
 				706C4EAA18B594F000A558FA /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,11 +342,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70F44B1018BB258D00AD2024 /* FeedStoryViewController.m in Sources */,
 				706C4ECE18B5984300A558FA /* StoryViewController.m in Sources */,
 				706C4ED218B5B50000A558FA /* DWSNotificationCell.m in Sources */,
 				706C4EA418B594F000A558FA /* main.m in Sources */,
 				706C4EA818B594F000A558FA /* DWSAppDelegate.m in Sources */,
 				706C4EC918B5982F00A558FA /* NotificationsViewController.m in Sources */,
+				70F44AFB18B9DEB800AD2024 /* UIView+FitToSubViews.m in Sources */,
+				70A0347918B7C50500598CC5 /* DWSNotification.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -468,6 +550,7 @@
 				706C4EC218B594F000A558FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		706C4EC318B594F000A558FA /* Build configuration list for PBXNativeTarget "Week2Tests" */ = {
 			isa = XCConfigurationList;
@@ -476,6 +559,7 @@
 				706C4EC518B594F000A558FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

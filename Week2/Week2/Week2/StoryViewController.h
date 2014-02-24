@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DWSNotification.h"
 
 @interface StoryViewController : UIViewController
 
+@property (nonatomic, strong) DWSNotification *storyInfo;
 @end

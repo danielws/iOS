@@ -10,10 +10,12 @@
 
 @interface DWSNotificationCell : UITableViewCell
 
-@property (nonatomic, strong) UIImage *userImage;
+@property (nonatomic, strong) UIImageView *userImage;
 @property (nonatomic, strong) UILabel *userNameLabel;
 @property (nonatomic, strong) UILabel *messageLabel;
-@property (nonatomic, strong) UIImage *notifBadgeImage;
+@property (nonatomic, strong) UIImageView *notifBadgeImage;
 @property (nonatomic, strong) UILabel *dateLabel;
+@property (nonatomic, strong) UILabel *notificationLabel;
+- (void)layoutSubviews;
 
 @end
