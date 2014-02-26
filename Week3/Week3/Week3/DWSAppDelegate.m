@@ -1,21 +1,19 @@
 //
 //  DWSAppDelegate.m
-//  Animation
+//  Week3
 //
 //  Created by Daniel Warner Smith on 2/25/14.
 //  Copyright (c) 2014 Daniel Warner Smith. All rights reserved.
 //
 
 #import "DWSAppDelegate.h"
-#import "DWSViewController.h"
 
 @implementation DWSAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    DWSViewController *myWindow = [[DWSViewController alloc] init];
-    self.window.rootViewController = myWindow;
+    // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;

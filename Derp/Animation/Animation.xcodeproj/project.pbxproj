@@ -19,6 +19,8 @@
 		703E50CC18BD334300E12A65 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 703E50B418BD334300E12A65 /* UIKit.framework */; };
 		703E50D418BD334300E12A65 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 703E50D218BD334300E12A65 /* InfoPlist.strings */; };
 		703E50D618BD334300E12A65 /* AnimationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 703E50D518BD334300E12A65 /* AnimationTests.m */; };
+		703E50E218BD335F00E12A65 /* DWSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 703E50E018BD335F00E12A65 /* DWSViewController.m */; };
+		703E50E318BD335F00E12A65 /* DWSViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 703E50E118BD335F00E12A65 /* DWSViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,9 @@
 		703E50D118BD334300E12A65 /* AnimationTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AnimationTests-Info.plist"; sourceTree = "<group>"; };
 		703E50D318BD334300E12A65 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		703E50D518BD334300E12A65 /* AnimationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimationTests.m; sourceTree = "<group>"; };
+		703E50DF18BD335F00E12A65 /* DWSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWSViewController.h; sourceTree = "<group>"; };
+		703E50E018BD335F00E12A65 /* DWSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWSViewController.m; sourceTree = "<group>"; };
+		703E50E118BD335F00E12A65 /* DWSViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DWSViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +116,9 @@
 				703E50C018BD334300E12A65 /* DWSAppDelegate.m */,
 				703E50C218BD334300E12A65 /* Images.xcassets */,
 				703E50B718BD334300E12A65 /* Supporting Files */,
+				703E50DF18BD335F00E12A65 /* DWSViewController.h */,
+				703E50E018BD335F00E12A65 /* DWSViewController.m */,
+				703E50E118BD335F00E12A65 /* DWSViewController.xib */,
 			);
 			path = Animation;
 			sourceTree = "<group>";
@@ -222,6 +230,7 @@
 			files = (
 				703E50BB18BD334300E12A65 /* InfoPlist.strings in Resources */,
 				703E50C318BD334300E12A65 /* Images.xcassets in Resources */,
+				703E50E318BD335F00E12A65 /* DWSViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,6 +250,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				703E50BD18BD334300E12A65 /* main.m in Sources */,
+				703E50E218BD335F00E12A65 /* DWSViewController.m in Sources */,
 				703E50C118BD334300E12A65 /* DWSAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

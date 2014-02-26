@@ -5,19 +5,19 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>A1BF1102-5AE0-449E-A7B2-5D440A64C376</string>
+	<string>09B04CFB-5B51-4797-AB05-99BE574F9D16</string>
 	<key>IDESourceControlProjectName</key>
-	<string>Animation</string>
+	<string>Week3</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>70B6F917-914B-4382-B99C-BBEE7A1526A4</key>
+		<key>4DC66B34-A3AE-488C-B3AF-921C0B3B7B14</key>
 		<string>ssh://github.com/danielws/iOS.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Derp/Animation/Animation.xcodeproj/project.xcworkspace</string>
+	<string>Week3/Week3/Week3.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>70B6F917-914B-4382-B99C-BBEE7A1526A4</key>
+		<key>4DC66B34-A3AE-488C-B3AF-921C0B3B7B14</key>
 		<string>../../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
@@ -25,16 +25,16 @@
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>70B6F917-914B-4382-B99C-BBEE7A1526A4</string>
+	<string>4DC66B34-A3AE-488C-B3AF-921C0B3B7B14</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>70B6F917-914B-4382-B99C-BBEE7A1526A4</string>
+			<string>4DC66B34-A3AE-488C-B3AF-921C0B3B7B14</string>
 			<key>IDESourceControlWCCName</key>
-			<string>Animation</string>
+			<string>iOS</string>
 		</dict>
 	</array>
 </dict>
