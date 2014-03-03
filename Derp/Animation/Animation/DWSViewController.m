@@ -10,6 +10,7 @@
 
 @interface DWSViewController ()
 @property (weak, nonatomic) IBOutlet UIView *blueSquare;
+@property (strong, nonatomic) UIView *redSquare;
 
 @end
 
@@ -27,6 +28,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.redSquare = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 200, 200)];
+    self.redSquare.backgroundColor = [UIColor redColor];
+    [self.view addSubview:self.redSquare];
     
 }
 

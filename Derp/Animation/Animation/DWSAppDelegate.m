@@ -8,14 +8,16 @@
 
 #import "DWSAppDelegate.h"
 #import "DWSViewController.h"
+#import "DWSExoBrainViewController.h"
 
 @implementation DWSAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    DWSViewController *myWindow = [[DWSViewController alloc] init];
-    self.window.rootViewController = myWindow;
+   // DWSViewController *myWindow = [[DWSViewController alloc] init];
+    DWSExoBrainViewController *exoBrainViewController = [[DWSExoBrainViewController alloc] init];
+    self.window.rootViewController = exoBrainViewController;
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;

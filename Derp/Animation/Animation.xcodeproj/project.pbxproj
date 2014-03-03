@@ -21,6 +21,12 @@
 		703E50D618BD334300E12A65 /* AnimationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 703E50D518BD334300E12A65 /* AnimationTests.m */; };
 		703E50E218BD335F00E12A65 /* DWSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 703E50E018BD335F00E12A65 /* DWSViewController.m */; };
 		703E50E318BD335F00E12A65 /* DWSViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 703E50E118BD335F00E12A65 /* DWSViewController.xib */; };
+		705D23D218C0678C00F925CB /* lift.wav in Resources */ = {isa = PBXBuildFile; fileRef = 705D23D018C0678C00F925CB /* lift.wav */; };
+		705D23D318C0678C00F925CB /* drop.wav in Resources */ = {isa = PBXBuildFile; fileRef = 705D23D118C0678C00F925CB /* drop.wav */; };
+		705D23D518C0687100F925CB /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 705D23D418C0687100F925CB /* AudioToolbox.framework */; };
+		705D23D718C06AA900F925CB /* init.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 705D23D618C06AA900F925CB /* init.mp3 */; };
+		705D23D918C06BE700F925CB /* init.wav in Resources */ = {isa = PBXBuildFile; fileRef = 705D23D818C06BE700F925CB /* init.wav */; };
+		70A72F7D18BFE5C400D1597B /* DWSExoBrainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70A72F7C18BFE5C400D1597B /* DWSExoBrainViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +59,13 @@
 		703E50DF18BD335F00E12A65 /* DWSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWSViewController.h; sourceTree = "<group>"; };
 		703E50E018BD335F00E12A65 /* DWSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWSViewController.m; sourceTree = "<group>"; };
 		703E50E118BD335F00E12A65 /* DWSViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DWSViewController.xib; sourceTree = "<group>"; };
+		705D23D018C0678C00F925CB /* lift.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = lift.wav; sourceTree = "<group>"; };
+		705D23D118C0678C00F925CB /* drop.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = drop.wav; sourceTree = "<group>"; };
+		705D23D418C0687100F925CB /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		705D23D618C06AA900F925CB /* init.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = init.mp3; sourceTree = "<group>"; };
+		705D23D818C06BE700F925CB /* init.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = init.wav; sourceTree = "<group>"; };
+		70A72F7B18BFE5C400D1597B /* DWSExoBrainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWSExoBrainViewController.h; sourceTree = "<group>"; };
+		70A72F7C18BFE5C400D1597B /* DWSExoBrainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWSExoBrainViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				705D23D518C0687100F925CB /* AudioToolbox.framework in Frameworks */,
 				703E50B318BD334300E12A65 /* CoreGraphics.framework in Frameworks */,
 				703E50B518BD334300E12A65 /* UIKit.framework in Frameworks */,
 				703E50B118BD334300E12A65 /* Foundation.framework in Frameworks */,
@@ -101,6 +115,7 @@
 		703E50AF18BD334300E12A65 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				705D23D418C0687100F925CB /* AudioToolbox.framework */,
 				703E50B018BD334300E12A65 /* Foundation.framework */,
 				703E50B218BD334300E12A65 /* CoreGraphics.framework */,
 				703E50B418BD334300E12A65 /* UIKit.framework */,
@@ -119,6 +134,8 @@
 				703E50DF18BD335F00E12A65 /* DWSViewController.h */,
 				703E50E018BD335F00E12A65 /* DWSViewController.m */,
 				703E50E118BD335F00E12A65 /* DWSViewController.xib */,
+				70A72F7B18BFE5C400D1597B /* DWSExoBrainViewController.h */,
+				70A72F7C18BFE5C400D1597B /* DWSExoBrainViewController.m */,
 			);
 			path = Animation;
 			sourceTree = "<group>";
@@ -126,6 +143,10 @@
 		703E50B718BD334300E12A65 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				705D23D818C06BE700F925CB /* init.wav */,
+				705D23D618C06AA900F925CB /* init.mp3 */,
+				705D23D018C0678C00F925CB /* lift.wav */,
+				705D23D118C0678C00F925CB /* drop.wav */,
 				703E50B818BD334300E12A65 /* Animation-Info.plist */,
 				703E50B918BD334300E12A65 /* InfoPlist.strings */,
 				703E50BC18BD334300E12A65 /* main.m */,
@@ -228,9 +249,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				705D23D318C0678C00F925CB /* drop.wav in Resources */,
 				703E50BB18BD334300E12A65 /* InfoPlist.strings in Resources */,
+				705D23D718C06AA900F925CB /* init.mp3 in Resources */,
 				703E50C318BD334300E12A65 /* Images.xcassets in Resources */,
 				703E50E318BD335F00E12A65 /* DWSViewController.xib in Resources */,
+				705D23D218C0678C00F925CB /* lift.wav in Resources */,
+				705D23D918C06BE700F925CB /* init.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +277,7 @@
 				703E50BD18BD334300E12A65 /* main.m in Sources */,
 				703E50E218BD335F00E12A65 /* DWSViewController.m in Sources */,
 				703E50C118BD334300E12A65 /* DWSAppDelegate.m in Sources */,
+				70A72F7D18BFE5C400D1597B /* DWSExoBrainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,6 +478,7 @@
 				703E50DB18BD334300E12A65 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		703E50DC18BD334300E12A65 /* Build configuration list for PBXNativeTarget "AnimationTests" */ = {
 			isa = XCConfigurationList;
@@ -460,6 +487,7 @@
 				703E50DE18BD334300E12A65 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

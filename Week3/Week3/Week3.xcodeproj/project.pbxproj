@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7041CD0A18C42B10001BE92D /* DWSMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7041CD0918C42B10001BE92D /* DWSMenuViewController.m */; };
 		70603A3318BDBB320040076E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70603A3218BDBB320040076E /* Foundation.framework */; };
 		70603A3518BDBB320040076E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70603A3418BDBB320040076E /* CoreGraphics.framework */; };
 		70603A3718BDBB320040076E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70603A3618BDBB320040076E /* UIKit.framework */; };
@@ -19,6 +20,8 @@
 		70603A4E18BDBB320040076E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70603A3618BDBB320040076E /* UIKit.framework */; };
 		70603A5618BDBB320040076E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 70603A5418BDBB320040076E /* InfoPlist.strings */; };
 		70603A5818BDBB320040076E /* Week3Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 70603A5718BDBB320040076E /* Week3Tests.m */; };
+		70603A6318BDBBA00040076E /* DWSFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70603A6218BDBBA00040076E /* DWSFeedViewController.m */; };
+		70603A6B18BDC9E80040076E /* DWSParentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70603A6A18BDC9E80040076E /* DWSParentViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7041CD0818C42B10001BE92D /* DWSMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWSMenuViewController.h; sourceTree = "<group>"; };
+		7041CD0918C42B10001BE92D /* DWSMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWSMenuViewController.m; sourceTree = "<group>"; };
 		70603A2F18BDBB320040076E /* Week3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Week3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70603A3218BDBB320040076E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		70603A3418BDBB320040076E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -48,6 +53,10 @@
 		70603A5318BDBB320040076E /* Week3Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Week3Tests-Info.plist"; sourceTree = "<group>"; };
 		70603A5518BDBB320040076E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		70603A5718BDBB320040076E /* Week3Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Week3Tests.m; sourceTree = "<group>"; };
+		70603A6118BDBBA00040076E /* DWSFeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWSFeedViewController.h; sourceTree = "<group>"; };
+		70603A6218BDBBA00040076E /* DWSFeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWSFeedViewController.m; sourceTree = "<group>"; };
+		70603A6918BDC9E80040076E /* DWSParentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWSParentViewController.h; sourceTree = "<group>"; };
+		70603A6A18BDC9E80040076E /* DWSParentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWSParentViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +118,8 @@
 			children = (
 				70603A4118BDBB320040076E /* DWSAppDelegate.h */,
 				70603A4218BDBB320040076E /* DWSAppDelegate.m */,
+				70603A6418BDBEED0040076E /* Controllers */,
+				70603A6518BDBEFC0040076E /* Views */,
 				70603A4418BDBB320040076E /* Images.xcassets */,
 				70603A3918BDBB320040076E /* Supporting Files */,
 			);
@@ -142,6 +153,26 @@
 				70603A5418BDBB320040076E /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		70603A6418BDBEED0040076E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				70603A6118BDBBA00040076E /* DWSFeedViewController.h */,
+				70603A6218BDBBA00040076E /* DWSFeedViewController.m */,
+				70603A6918BDC9E80040076E /* DWSParentViewController.h */,
+				70603A6A18BDC9E80040076E /* DWSParentViewController.m */,
+				7041CD0818C42B10001BE92D /* DWSMenuViewController.h */,
+				7041CD0918C42B10001BE92D /* DWSMenuViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		70603A6518BDBEFC0040076E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,8 +271,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70603A6B18BDC9E80040076E /* DWSParentViewController.m in Sources */,
+				70603A6318BDBBA00040076E /* DWSFeedViewController.m in Sources */,
 				70603A3F18BDBB320040076E /* main.m in Sources */,
 				70603A4318BDBB320040076E /* DWSAppDelegate.m in Sources */,
+				7041CD0A18C42B10001BE92D /* DWSMenuViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,6 +476,7 @@
 				70603A5D18BDBB320040076E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		70603A5E18BDBB320040076E /* Build configuration list for PBXNativeTarget "Week3Tests" */ = {
 			isa = XCConfigurationList;
@@ -450,6 +485,7 @@
 				70603A6018BDBB320040076E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

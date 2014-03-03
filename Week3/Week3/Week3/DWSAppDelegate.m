@@ -7,13 +7,21 @@
 //
 
 #import "DWSAppDelegate.h"
+#import "DWSParentViewController.h"
+#import "DWSFeedViewController.h"
 
 @implementation DWSAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
+    // Kick off the show
+    DWSParentViewController *parentViewController = [[DWSParentViewController alloc] init];
+    
+    DWSFeedViewController *feedViewController = [[DWSFeedViewController alloc] init];
+    
+    self.window.rootViewController = parentViewController;
+    feedViewController.view.backgroundColor = [UIColor brownColor];
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
