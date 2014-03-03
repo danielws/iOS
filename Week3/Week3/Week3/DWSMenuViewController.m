@@ -18,8 +18,7 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.menuImageView = [[UIImageView alloc]initWithFrame:CGRectZero];
-        [self.view addSubview:self.menuImageView];
+
     }
     return self;
 }
@@ -27,7 +26,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+    self.menuImageView = [[UIImageView alloc]initWithFrame:CGRectZero];
+    self.menuImageView.image = [UIImage imageNamed:@"menu"];
+    [self.view addSubview:self.menuImageView];
 }
 
 - (void)viewDidLayoutSubviews {
