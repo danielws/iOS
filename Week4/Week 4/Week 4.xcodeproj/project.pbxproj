@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		700E4D0F18CD957600F06518 /* DWSFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 700E4D0E18CD957600F06518 /* DWSFeedViewController.m */; };
+		700E4D1218CD95A100F06518 /* DWSMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 700E4D1118CD95A100F06518 /* DWSMenuViewController.m */; };
+		700E4D1518CD95CB00F06518 /* DWSParentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 700E4D1418CD95CB00F06518 /* DWSParentViewController.m */; };
 		7022137D18C97AC5004E4E3F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7022137C18C97AC5004E4E3F /* Foundation.framework */; };
 		7022137F18C97AC5004E4E3F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7022137E18C97AC5004E4E3F /* CoreGraphics.framework */; };
 		7022138118C97AC5004E4E3F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7022138018C97AC5004E4E3F /* UIKit.framework */; };
@@ -19,6 +22,7 @@
 		7022139818C97AC5004E4E3F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7022138018C97AC5004E4E3F /* UIKit.framework */; };
 		702213A018C97AC5004E4E3F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7022139E18C97AC5004E4E3F /* InfoPlist.strings */; };
 		702213A218C97AC5004E4E3F /* Week_4Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 702213A118C97AC5004E4E3F /* Week_4Tests.m */; };
+		702213AD18C97B06004E4E3F /* DWSNewsstandViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 702213AC18C97B06004E4E3F /* DWSNewsstandViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +36,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		700E4D0D18CD957600F06518 /* DWSFeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWSFeedViewController.h; sourceTree = "<group>"; };
+		700E4D0E18CD957600F06518 /* DWSFeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWSFeedViewController.m; sourceTree = "<group>"; };
+		700E4D1018CD95A100F06518 /* DWSMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWSMenuViewController.h; sourceTree = "<group>"; };
+		700E4D1118CD95A100F06518 /* DWSMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWSMenuViewController.m; sourceTree = "<group>"; };
+		700E4D1318CD95CB00F06518 /* DWSParentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWSParentViewController.h; sourceTree = "<group>"; };
+		700E4D1418CD95CB00F06518 /* DWSParentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWSParentViewController.m; sourceTree = "<group>"; };
 		7022137918C97AC5004E4E3F /* Week 4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Week 4.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7022137C18C97AC5004E4E3F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7022137E18C97AC5004E4E3F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -48,6 +58,8 @@
 		7022139D18C97AC5004E4E3F /* Week 4Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Week 4Tests-Info.plist"; sourceTree = "<group>"; };
 		7022139F18C97AC5004E4E3F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		702213A118C97AC5004E4E3F /* Week_4Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Week_4Tests.m; sourceTree = "<group>"; };
+		702213AB18C97B06004E4E3F /* DWSNewsstandViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWSNewsstandViewController.h; sourceTree = "<group>"; };
+		702213AC18C97B06004E4E3F /* DWSNewsstandViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWSNewsstandViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +123,14 @@
 				7022138C18C97AC5004E4E3F /* DWSAppDelegate.m */,
 				7022138E18C97AC5004E4E3F /* Images.xcassets */,
 				7022138318C97AC5004E4E3F /* Supporting Files */,
+				702213AB18C97B06004E4E3F /* DWSNewsstandViewController.h */,
+				702213AC18C97B06004E4E3F /* DWSNewsstandViewController.m */,
+				700E4D0D18CD957600F06518 /* DWSFeedViewController.h */,
+				700E4D0E18CD957600F06518 /* DWSFeedViewController.m */,
+				700E4D1018CD95A100F06518 /* DWSMenuViewController.h */,
+				700E4D1118CD95A100F06518 /* DWSMenuViewController.m */,
+				700E4D1318CD95CB00F06518 /* DWSParentViewController.h */,
+				700E4D1418CD95CB00F06518 /* DWSParentViewController.m */,
 			);
 			path = "Week 4";
 			sourceTree = "<group>";
@@ -241,7 +261,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				7022138918C97AC5004E4E3F /* main.m in Sources */,
+				702213AD18C97B06004E4E3F /* DWSNewsstandViewController.m in Sources */,
 				7022138D18C97AC5004E4E3F /* DWSAppDelegate.m in Sources */,
+				700E4D1518CD95CB00F06518 /* DWSParentViewController.m in Sources */,
+				700E4D0F18CD957600F06518 /* DWSFeedViewController.m in Sources */,
+				700E4D1218CD95A100F06518 /* DWSMenuViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,6 +466,7 @@
 				702213A718C97AC5004E4E3F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		702213A818C97AC5004E4E3F /* Build configuration list for PBXNativeTarget "Week 4Tests" */ = {
 			isa = XCConfigurationList;
@@ -450,6 +475,7 @@
 				702213AA18C97AC5004E4E3F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
